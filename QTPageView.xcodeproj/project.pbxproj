@@ -12,6 +12,10 @@
 		42DF2DBE1EE124DF007E0273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DF2DBC1EE124DF007E0273 /* Main.storyboard */; };
 		42DF2DC01EE124DF007E0273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DF2DBF1EE124DF007E0273 /* Assets.xcassets */; };
 		42DF2DC31EE124DF007E0273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DF2DC11EE124DF007E0273 /* LaunchScreen.storyboard */; };
+		42DF2DCC1EE1252F007E0273 /* QTTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DF2DCB1EE1252F007E0273 /* QTTitleView.swift */; };
+		42DF2DCE1EE12544007E0273 /* QTContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DF2DCD1EE12544007E0273 /* QTContentView.swift */; };
+		42DF2DD01EE12551007E0273 /* QTPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DF2DCF1EE12551007E0273 /* QTPageView.swift */; };
+		42DF2DD21EE127F1007E0273 /* QTPageViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DF2DD11EE127F1007E0273 /* QTPageViewStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		42DF2DBF1EE124DF007E0273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42DF2DC21EE124DF007E0273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42DF2DC41EE124DF007E0273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DF2DCB1EE1252F007E0273 /* QTTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QTTitleView.swift; sourceTree = "<group>"; };
+		42DF2DCD1EE12544007E0273 /* QTContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QTContentView.swift; sourceTree = "<group>"; };
+		42DF2DCF1EE12551007E0273 /* QTPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QTPageView.swift; sourceTree = "<group>"; };
+		42DF2DD11EE127F1007E0273 /* QTPageViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QTPageViewStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +62,24 @@
 		42DF2DB71EE124DF007E0273 /* QTPageView */ = {
 			isa = PBXGroup;
 			children = (
+				42DF2DCA1EE12517007E0273 /* QTPageView */,
 				42DF2DB81EE124DF007E0273 /* AppDelegate.swift */,
 				42DF2DBA1EE124DF007E0273 /* ViewController.swift */,
 				42DF2DBC1EE124DF007E0273 /* Main.storyboard */,
 				42DF2DBF1EE124DF007E0273 /* Assets.xcassets */,
 				42DF2DC11EE124DF007E0273 /* LaunchScreen.storyboard */,
 				42DF2DC41EE124DF007E0273 /* Info.plist */,
+			);
+			path = QTPageView;
+			sourceTree = "<group>";
+		};
+		42DF2DCA1EE12517007E0273 /* QTPageView */ = {
+			isa = PBXGroup;
+			children = (
+				42DF2DCB1EE1252F007E0273 /* QTTitleView.swift */,
+				42DF2DCD1EE12544007E0273 /* QTContentView.swift */,
+				42DF2DCF1EE12551007E0273 /* QTPageView.swift */,
+				42DF2DD11EE127F1007E0273 /* QTPageViewStyle.swift */,
 			);
 			path = QTPageView;
 			sourceTree = "<group>";
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DF2DD21EE127F1007E0273 /* QTPageViewStyle.swift in Sources */,
 				42DF2DBB1EE124DF007E0273 /* ViewController.swift in Sources */,
+				42DF2DCE1EE12544007E0273 /* QTContentView.swift in Sources */,
+				42DF2DD01EE12551007E0273 /* QTPageView.swift in Sources */,
 				42DF2DB91EE124DF007E0273 /* AppDelegate.swift in Sources */,
+				42DF2DCC1EE1252F007E0273 /* QTTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
