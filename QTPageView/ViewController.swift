@@ -12,14 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupUI()
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension ViewController{
+    func  setupUI()  {
+        let childVcs:[UIViewController]=[UIViewController.init(),UIViewController.init()]
+        let titles:[String] = ["热门","附近"]
+        let style:QTPageViewStyle = QTPageViewStyle()
+        let pageView:QTPageView! = QTPageView(frame: self.view.bounds, titles:titles , childVcs: childVcs, parentVc: self, style: style)
+        self.view.addSubview(pageView)
     }
-
-
 }
 

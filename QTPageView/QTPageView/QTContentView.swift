@@ -9,14 +9,14 @@
 import UIKit
 
 class QTContentView: UIView {
-    fileprivate var childVc:[UIViewController]
+    fileprivate var childVcs:[UIViewController]
     fileprivate var parentVc:UIViewController
     
-    init(frame: CGRect,childVc:[UIViewController],parentVc:UIViewController) {
-        self.childVc=childVc
+    init(frame: CGRect,childVcs:[UIViewController],parentVc:UIViewController) {
+        self.childVcs=childVcs
         self.parentVc=parentVc;
-        super .init(frame: frame)
-        
+        super.init(frame: frame)
+        setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -28,5 +28,16 @@ class QTContentView: UIView {
 extension QTContentView{
     func setupUI() {
         self.frame=frame;
+        for i in  0...childVcs.count-1 {
+            let childVc:UIViewController! = childVcs[i]
+            childVc.view.frame=bounds
+            parentVc.addChildViewController(childVc)
+            addSubview(childVc.view)
+            if(i==0 ){
+                childVc.view.backgroundColor=UIColor.gray;
+            }else{
+                childVc.view.backgroundColor=UIColor.green;
+            }
+        }
     }
 }
